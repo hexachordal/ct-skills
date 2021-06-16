@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 *{
   margin:0;
@@ -7,13 +9,16 @@
   scroll-behavior: smooth;
 }
 
-
+img{
+    width: 100%;
+    height: auto;
+}
 
 #navOne{
   position: absolute;
   top:0;
   
-  z-index: 1;
+  
   /* Style for "01. histor" */
   
 width: 100%;
@@ -46,14 +51,15 @@ line-height: normal;
   }
 
 #navTwo{
-    position: absolute;
+    position: sticky;
     top:0;
+    background-color:#fefeff;
     
     z-index: 1;
     /* Style for "01. histor" */
     
   width: 100%;
-  height: 9px;
+  height: 76px; /*7.7755102vh;*/
   color: #414f6b;
   font-family: 'Lato', sans-serif;
   font-size: 12px;
@@ -117,11 +123,23 @@ line-height: normal;
     .Home{
         background-position: 63% center;
     }
+
+    #bigTwo{
+        font-size: 90px;
+        text-align: left;
+        left: 13%;
+    }
 }
 
 @media screen and (min-width: 800px){
     .Home{
         background-position: 68% center;
+    }
+
+    #bigTwo{
+        font-size: 100px;
+        text-align: left;
+        left: 15%;
     }
 }
 
@@ -129,37 +147,198 @@ line-height: normal;
     .Home{
         background-position: 100% 20%;
     }
+
+    #bigTwo{
+        font-size: 120px;
+        text-align: left;
+        left: 19%;
+    }
+    #bigOne{
+        font-size: 120px;
+        text-align: left;
+        left: 20.25%;
+    }
 }
 
 @media screen and (min-width: 1400px){
     .Home{
         background-position:  center 20% ;
     }
+    #header{
+        position: relative;
+        height: 21.309524vh;
+        width: 100%;
+        
+    }
+    #bigTwo{
+        font-size: 136px;
+        text-align: left;
+        left: 22.616822%;
+    }
+    #bigOne{
+        font-size: 136px;
+        text-align: left;
+        left: 20.25%;
+    }
 }
+
 
 
 .History{
     position: relative;
-    height: 100vh;
+    display: flex;
+    height: 100vh; /*92.244898vh; */
     width: 100%;
     background-image: url("Backgrounds/peak.png");
-    background-position: center 74px;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
 }
+#historyText{
+    /* Style for "Cras scele" */
+    position: relative;
+    bottom: 30%;
+    align-self:center;
 
-header{
+width: 813px;
+height: 63px;
+color: #000000;
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: left;
+/* Text style for "C, ras sce" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+
+#history{
+    /* Style for "HISTORY" */
+    position:relative;
+    left: 20%;
+    top: 6%;
+width: 110px;
+height: 30px;
+color: #414f6b;
+font-family: 'Oswald', sans-serif;
+font-size: 32px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+text-transform: uppercase;
+/* Text style for ", HISTORY" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+
+#header{
     position: relative;
     height: 21.309524vh;
     width: 100%;
     
 }
+#bigOne{
+    /* Style for "02." */
+    position: relative;
+    left: 19%;
+    top: 5%;
+width: 144px;
+height: 124px;
+opacity: 0.5;
+color: #414f6b;
+font-family: 'Oswald', sans-serif;
+font-size: 80px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+/* Text style for "0, 2." */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
 
+#bigTwo{
+    /* Style for "02." */
+    position: relative;
+    left: 11%;
+width: 170px;
+height: 124px;
+opacity: 0.5;
+color: #414f6b;
+font-family: 'Oswald', sans-serif;
+font-size: 80px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+/* Text style for "0, 2." */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+
+#climb{
+    /* Style for "CLIMB" */
+width: 80px;
+height: 30px;
+color: #414f6b;
+font-family: 'Oswald', sans-serif;
+font-size: 32px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+text-transform: uppercase;
+/* Text style for "C, LIMB" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
 #mountainText{
     position: relative;
+    display: flex;
     height: 4.761905vh;
     width: 100%;
     background-color: #414f6b;
+}
+
+#mountainOne, #mountainTwo{
+    /* Style for "MOUNTAIN 1" */
+    width: 140px;
+    height: 40px;
+    color: #b0b4be;
+
+font-family: "Oswald", sans-serif;
+font-size: 20px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+
+text-transform: uppercase;
+/* Text style for "M, OUNTAIN" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+
+#mountainOne:hover, #mountainTwo:hover{
+    background-color: #b0b4be;
+color: #414f6b;
+text-decoration: underline;
+cursor: pointer;
 }
 
 .Team{
