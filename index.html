@@ -14,7 +14,7 @@
             <nav id="navOne">
                 <div id="navContainer">
                     <a id="homeLink" href="#navOne">
-                      <img src=Logo.png alt="logo"></img>
+                      <img id="header-logo" src=Logo.png alt="logo"></img>
                     </a>
                     <div id="teamHistory">
                     <a id="historyLink" href="#navTwo" class="navOneItems">
@@ -29,12 +29,13 @@
                 </nav>
         </div>
         <nav id="navTwo">
+            
             <div id="navContainer">
                 <a id="homeLink" href="#navOne">
                   <img src=Logo.png alt="logo"></img>
                 </a>
                 <div id="teamHistory">
-                <a id="historyLink" class="navTwoItems" href="#navTwo">
+                <a id="historyLink" class="navTwoItems" href="#histLink">
                   01. History
                 </a>
                 <a id="teamLink" class="navTwoItems" href="#header">
@@ -44,11 +45,14 @@
                 </div>
               
             </nav>
-        <div class="History">
             
+        <div class="History">
+            <div id="histLink"></div>
+            <div id="historyContainer">
                 <div id="bigOne">01.</div>
                 <h1 id="history">HISTORY</h1>
                 <p id="historyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+            </div>
                 <div id="carousel"></div>
         </div>
         <header id="header">
@@ -63,6 +67,10 @@
         <div class="Team">
             <div id="schedule"></div>
         </div>
-        <footer></footer>
+        <footer>
+            <a href="#navOne">
+            <img id="footer-logo" src="footer-logo.png" alt="footer logo">
+            </a>
+        </footer>
 </body>
 </html>

@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
 }
 
-img{
+#header-logo{
     width: 100%;
     height: auto;
 }
@@ -84,6 +84,39 @@ line-height: normal;
   
   }
 
+  #histLink{
+    position: relative;
+    top:-76px;
+    background-color:#fefeff;
+    
+    z-index: -1;
+    /* Style for "01. histor" */
+    
+  width: 100%;
+  height: 76px; /*7.7755102vh;*/
+  color: #414f6b;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* Text style for "01. histor" */
+  font-style: normal;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  }
+
+  .navTwoItems{
+    padding-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #414f6b;
+    border-bottom-width: 2px;
+  
+  }
 
 
 #homeLink a{
@@ -187,7 +220,8 @@ line-height: normal;
 .History{
     position: relative;
     display: flex;
-    height: 100vh; /*92.244898vh; */
+    justify-content: center;
+    height: 92.244898vh; 
     width: 100%;
     background-image: url("Backgrounds/peak.png");
     background-position: center ;
@@ -197,9 +231,9 @@ line-height: normal;
 #historyText{
     /* Style for "Cras scele" */
     position: relative;
-    bottom: 30%;
+    
     align-self:center;
-
+    
 width: 813px;
 height: 63px;
 color: #000000;
@@ -219,7 +253,7 @@ line-height: normal;
 #history{
     /* Style for "HISTORY" */
     position:relative;
-    left: 20%;
+    left: 0%;
     top: 6%;
 width: 110px;
 height: 30px;
@@ -247,8 +281,9 @@ line-height: normal;
 #bigOne{
     /* Style for "02." */
     position: relative;
-    left: 19%;
-    top: 5%;
+    top:0%;
+    left: 0%;
+    
 width: 144px;
 height: 124px;
 opacity: 0.5;
@@ -266,6 +301,24 @@ letter-spacing: normal;
 line-height: normal;
 }
 
+#historyContainer{
+    position:absolute;
+    display: flex;
+    
+    top: 40px;
+    width: 880px;
+    height: 194px;
+}
+
+#carousel{
+position: absolute;
+width: 100%;
+height: 20vh;
+bottom:0px;
+opacity: 80%;
+background-color: #414f6b;
+}
+
 #bigTwo{
     /* Style for "02." */
     position: relative;
@@ -273,6 +326,7 @@ line-height: normal;
 width: 170px;
 height: 124px;
 opacity: 0.5;
+z-index: 1;
 color: #414f6b;
 font-family: 'Oswald', sans-serif;
 font-size: 80px;
@@ -325,7 +379,7 @@ font-weight: 700;
 font-style: normal;
 letter-spacing: normal;
 line-height: normal;
-text-align: left;
+text-align: center;
 
 text-transform: uppercase;
 /* Text style for "M, OUNTAIN" */
@@ -351,6 +405,8 @@ cursor: pointer;
     background-size: cover;
 }
 
+
+
 footer{
     position: relative;
     height: 8.690476vh;
@@ -358,5 +414,9 @@ footer{
     background-color: #414f6b;
 }
 
+#footer-logo{
+    position: absolute;
+    top: 25%;
+}
 
 /* 179 40 548 73 840
