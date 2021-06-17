@@ -144,7 +144,7 @@ line-height: normal;
 #teamHistory{
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 192px;
 }
 
@@ -170,68 +170,6 @@ line-height: normal;
     background-size: cover;
 }
 
-@media screen and (min-width: 500px){
-    .Home{
-        background-position: 63% center;
-    }
-
-    #bigTwo{
-        font-size: 90px;
-        text-align: left;
-        left: 13%;
-    }
-}
-
-@media screen and (min-width: 800px){
-    .Home{
-        background-position: 68% center;
-    }
-
-    #bigTwo{
-        font-size: 100px;
-        text-align: left;
-        left: 15%;
-    }
-}
-
-@media screen and (min-width: 1000px){
-    .Home{
-        background-position: 100% 20%;
-    }
-
-    #bigTwo{
-        font-size: 120px;
-        text-align: left;
-        left: 19%;
-    }
-    #bigOne{
-        font-size: 120px;
-        text-align: left;
-        left: 20.25%;
-    }
-}
-
-@media screen and (min-width: 1400px){
-    .Home{
-        background-position:  center 20% ;
-    }
-    #header{
-        position: relative;
-        height: 21.309524vh;
-        width: 100%;
-        
-    }
-    #bigTwo{
-        font-size: 136px;
-        text-align: left;
-        left: 22.616822%;
-    }
-    #bigOne{
-        font-size: 136px;
-        text-align: left;
-        left: 20.25%;
-    }
-}
 
 
 
@@ -253,7 +191,8 @@ line-height: normal;
     align-self:center;
     
 width: 813px;
-height: 63px;
+height: 100px;
+top: 60%;
 color: #000000;
 font-family: 'Lato', sans-serif;
 font-size: 16px;
@@ -271,8 +210,8 @@ line-height: normal;
 #history{
     /* Style for "HISTORY" */
     position:relative;
-    left: 0%;
-    top: 6%;
+    left: 16%;
+    top: 18%;
 width: 110px;
 height: 30px;
 color: #414f6b;
@@ -292,15 +231,17 @@ line-height: normal;
 
 #header{
     position: relative;
+    display: flex;
     height: 21.309524vh;
     width: 100%;
+    
     
 }
 #bigOne{
     /* Style for "02." */
     position: relative;
     top:0%;
-    left: 0%;
+    left: 18%;
     
 width: 144px;
 height: 124px;
@@ -386,7 +327,10 @@ line-height: normal;
 
 #climb{
     /* Style for "CLIMB" */
-width: 80px;
+    position:relative;
+    left: 16%;
+    top: 50%;
+width: 110px;
 height: 30px;
 color: #414f6b;
 font-family: 'Oswald', sans-serif;
@@ -397,16 +341,21 @@ letter-spacing: normal;
 line-height: normal;
 text-align: left;
 text-transform: uppercase;
-/* Text style for "C, LIMB" */
+/* Text style for ", CLIMB" */
 font-style: normal;
 letter-spacing: normal;
 line-height: normal;
 }
+#climbText{
+
+}
+
 #mountainText{
     position: relative;
     display: flex;
     height: 4.761905vh;
     width: 100%;
+    padding-left: 18%;
     background-color: #414f6b;
 }
 
@@ -448,10 +397,54 @@ cursor: pointer;
     background-size: cover;
 }
 
+#schedule{
+    position: relative;
+    top: 10%;
+    left: 18%;
+    width: 350px;
+    max-width: 80%;
+    height:230px;
+    background-color: rgb(255, 255, 255, 0.8);
+    
+}
 
+#scheduleWord{
+    /* Style for "SCHEDULE" */
+    position: relative;
+    left: 10%;
+width: 132px;
+height: 30px;
+color: #414f6b;
+font-family: 'Oswald', sans-serif;
+font-size: 32px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+text-transform: uppercase;
+/* Text style for "S, CHEDULE" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+
+#scheduleItems{
+    position: relative;
+    top: 10%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.scheduleItem{
+    padding-bottom: 10px;
+}
 
 footer{
-    position: relative;
+    position: absolute;
+    bottom: 0;
     height: 8.690476vh;
     width: 100%;
     background-color: #414f6b;
@@ -460,6 +453,77 @@ footer{
 #footer-logo{
     position: absolute;
     top: 25%;
+    left: 18%;
+    height: 60%;
 }
 
-/* 179 40 548 73 840
+
+
+@media screen and (max-width: 500px){
+    .Home{
+        background-position: 63% center;
+    }
+
+    
+
+    #historyText{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px){
+    #historyText{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px){
+    .Home{
+        background-position: 68% center;
+    }
+
+    #bigTwo{
+        font-size: 100px;
+        text-align: left;
+        left: 15%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+    .Home{
+        background-position: 100% 20%;
+    }
+
+    #bigTwo{
+        font-size: 120px;
+        text-align: left;
+        left: 18%;
+    }
+    #bigOne{
+        font-size: 120px;
+        text-align: left;
+        left: 18%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .Home{
+        background-position:  center 20% ;
+    }
+    #header{
+        position: relative;
+        height: 21.309524vh;
+        width: 100%;
+        
+    }
+    #bigTwo{
+        font-size: 136px;
+        text-align: left;
+        left: 18%;
+    }
+    #bigOne{
+        font-size: 136px;
+        text-align: left;
+        left: 18%;
+    }
+}

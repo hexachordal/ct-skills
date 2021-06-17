@@ -21,4 +21,3 @@ for(let i = 0; i < thumbnails.length; i++){
     }
 }
 
-console.log(thumbnails);
