@@ -377,6 +377,15 @@ line-height: normal;
     padding-left: 18%;
     background-color: #414f6b;
 }
+#mountLink{
+    position: absolute;
+    display: flex;
+    height: 4.761905vh;
+    width: 100%;
+    left: 0%;
+    background-color: #414f6b;
+    z-index: -1;
+}
 
 #mountainOne{
     /* Style for "MOUNTAIN 1" */
@@ -398,6 +407,17 @@ text-transform: uppercase;
 font-style: normal;
 letter-spacing: normal;
 line-height: normal;
+}
+
+.accordOne.open{
+    transition: 2s;
+    position: relative;
+    height: 65.238095vh;
+    width: 100%;
+    background-image: url('Backgrounds/mist.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #mountainTwo{
@@ -430,6 +450,11 @@ line-height: normal;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.Team.trans{
+    transition: 2s;
+    color: pink;
 }
 
 #schedule{
@@ -478,7 +503,7 @@ line-height: normal;
 }
 
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     height: 8.690476vh;
     width: 100%;
@@ -499,6 +524,31 @@ footer{
         background-position: 63% center;
     }
 
+    .Team, #schedule, #scheduleItems, .scheduleItem, #scheduleWord{
+        height: 0vh;
+    }
+
+    #mountainText{
+        top: -4.761905vh;
+
+    }
+
+    #mountainOne{
+        color: #b0b4be;
+    background-color: #414f6b;
+    text-decoration: none;
+    }
+
+    #mountainTwo{
+        position: absolute;
+    top: 95%;
+    z-index: 1;
+    }
+
+    #mountLink{
+        top: 100%;
+        z-index: 1;
+    }
     
 
     #historyText{
@@ -510,11 +560,63 @@ footer{
     #historyText{
         font-size: 13px;
     }
+
+    .Team, #schedule, #scheduleItems, .scheduleItem, #scheduleWord{
+        height: 0vh;
+    }
+
+    #mountainText{
+        top: -4.761905vh;
+
+    }
+
+    #mountainOne{
+        color: #b0b4be;
+    background-color: #414f6b;
+    text-decoration: none;
+    }
+
+    #mountainTwo{
+        position: absolute;
+    top: 95%;
+    z-index: 1;
+    }
+
+    #mountLink{
+        top: 100%;
+        z-index: 1;
+    }
 }
 
 @media screen and (min-width: 650px) and (max-width: 800px){
     .Home{
         background-position: 68% center;
+    }
+
+    .Team, #schedule, #scheduleItems, .scheduleItem, #scheduleWord{
+        height: 0vh;
+    }
+
+    #mountainText{
+        top: -4.761905vh;
+
+    }
+
+    #mountainOne{
+        color: #b0b4be;
+    background-color: #414f6b;
+    text-decoration: none;
+    }
+
+    #mountainTwo{
+        position: absolute;
+    top: 95%;
+    z-index: 1;
+    }
+
+    #mountLink{
+        top: 100%;
+        z-index: 1;
     }
 
     #bigTwo{
@@ -528,6 +630,9 @@ footer{
     .Home{
         background-position: 100% 20%;
     }
+
+    
+    
 
     #bigTwo{
         font-size: 120px;

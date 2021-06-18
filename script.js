@@ -35,10 +35,21 @@ let places = document.getElementsByClassName("place");
 let mountOne= document.getElementById("mountainOne")
 let mountTwo= document.getElementById("mountainTwo")
 
+let schedule = document.getElementById("schedule")
+let scheduleWord = document.getElementById("scheduleWord")
+let scheduleItem = document.getElementsByClassName("scheduleItem")
+let scheduleItems = document.getElementById("scheduleItems")
 
 
 mountOne.onclick= function(){
-
+    if(team[0].clientWidth <= 800){
+    team[0].style.height="65.238095vh";
+    schedule.style.height="230px";
+    scheduleWord.style.height="30px";
+    scheduleItem[0].style.height="";
+    scheduleItems.style.height="";
+}
+    
     team[0].style.backgroundImage="url('Backgrounds/mist.png')";
     mountOne.style.color = "#414f6b";
     mountOne.style.textDecoration = "underline";
