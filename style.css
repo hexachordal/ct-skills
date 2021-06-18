@@ -347,7 +347,26 @@ letter-spacing: normal;
 line-height: normal;
 }
 #climbText{
-
+     /* Style for "Cras scele" */
+     position: relative;
+     overflow-wrap: break-word;
+     align-self:center;
+     
+ width: 813px;
+ height: 100px;
+ top: 60%;
+ color: #000000;
+ font-family: 'Lato', sans-serif;
+ font-size: 16px;
+ font-weight: 300;
+ font-style: normal;
+ letter-spacing: normal;
+ line-height: 24px;
+ text-align: left;
+ /* Text style for "C, ras sce" */
+ font-style: normal;
+ letter-spacing: normal;
+ line-height: normal;
 }
 
 #mountainText{
@@ -359,12 +378,34 @@ line-height: normal;
     background-color: #414f6b;
 }
 
-#mountainOne, #mountainTwo{
+#mountainOne{
+    /* Style for "MOUNTAIN 1" */
+    width: 140px;
+    height: 40px;
+    color: #414f6b;
+    text-decoration: underline;
+    background-color: #b0b4be;
+font-family: "Oswald", sans-serif;
+font-size: 20px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: center;
+cursor: pointer;
+text-transform: uppercase;
+/* Text style for "M, OUNTAIN" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+
+#mountainTwo{
     /* Style for "MOUNTAIN 1" */
     width: 140px;
     height: 40px;
     color: #b0b4be;
-
+cursor: pointer;
 font-family: "Oswald", sans-serif;
 font-size: 20px;
 font-weight: 700;
@@ -380,18 +421,12 @@ letter-spacing: normal;
 line-height: normal;
 }
 
-#mountainOne:hover, #mountainTwo:hover{
-    background-color: #b0b4be;
-color: #414f6b;
-text-decoration: underline;
-cursor: pointer;
-}
 
 .Team{
     position: relative;
     height: 65.238095vh;
     width: 100%;
-    background-image: url("Backgrounds/mist.png");
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
