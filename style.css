@@ -519,13 +519,24 @@ footer{
 
 
 
+
 @media screen and (max-width: 500px){
     .Home{
         background-position: 63% center;
     }
 
+    /*
     .Team, #schedule, #scheduleItems, .scheduleItem, #scheduleWord{
         height: 0vh;
+    }
+
+    */
+
+    #climbText{
+        top: 10%;
+        font-size: 10px;
+        width: 40%;
+        z-index: 1;
     }
 
     #mountainText{
@@ -554,17 +565,27 @@ footer{
     #historyText{
         font-size: 10px;
     }
+
+    #bigTwo{
+        top:20%;
+    }
+
+    #climb{
+        left: -6%;
+        top: 42%;
+    }
 }
 
-@media screen and (min-width: 500px) and (max-width: 650px){
+@media screen and (min-width: 501px) and (max-width: 650px){
     #historyText{
         font-size: 13px;
     }
 
+    /*
     .Team, #schedule, #scheduleItems, .scheduleItem, #scheduleWord{
         height: 0vh;
     }
-
+    */
     #mountainText{
         top: -4.761905vh;
 
@@ -586,17 +607,31 @@ footer{
         top: 100%;
         z-index: 1;
     }
+    #bigTwo{
+        top:20%;
+    }
+    #climb{
+        left: -2%;
+        top: 42%;
+    }
+    #climbText{
+        top: 20%;
+    font-size: 11px;
+    width: 40%;
+    z-index: 1;
+    }
 }
 
-@media screen and (min-width: 650px) and (max-width: 800px){
+@media screen and (min-width: 651px) and (max-width: 800px){
     .Home{
         background-position: 68% center;
     }
 
+    /*
     .Team, #schedule, #scheduleItems, .scheduleItem, #scheduleWord{
         height: 0vh;
     }
-
+    */
     #mountainText{
         top: -4.761905vh;
 
@@ -623,21 +658,45 @@ footer{
         font-size: 100px;
         text-align: left;
         left: 15%;
+        top: 8%;
+    }
+
+    #climb{
+        left: 6%;
+        top: 42%;
+    }
+    #climbText{
+        top: 25%;
+    left: 3%;
+    font-size: 12px;
+    width: 50%;
     }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1000px){
+@media screen and (min-width: 801px) and (max-width: 1000px){
     .Home{
         background-position: 100% 20%;
     }
 
+    #climb {
+        left: 15%;
+        top: 64%;
+    }
+
+    #climbText{
+        top: 25%;
+    left: 13%;
     
+    font-size: 15px;
+    width: 50%;
+    }
     
 
     #bigTwo{
         font-size: 120px;
         text-align: left;
         left: 18%;
+        top: 18%;
     }
     #bigOne{
         font-size: 120px;
@@ -646,7 +705,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1001px){
     .Home{
         background-position:  center 20% ;
     }
@@ -665,5 +724,12 @@ footer{
         font-size: 136px;
         text-align: left;
         left: 18%;
+    }
+
+    #climbText{
+        top: 25%;
+        left: 17%;
+        font-size: 16px;
+        width: 50%;
     }
 }

@@ -42,6 +42,7 @@ let scheduleItems = document.getElementById("scheduleItems")
 
 
 mountOne.onclick= function(){
+    /*
     if(team[0].clientWidth <= 800){
     team[0].style.height="65.238095vh";
     schedule.style.height="230px";
@@ -49,7 +50,7 @@ mountOne.onclick= function(){
     scheduleItem[0].style.height="";
     scheduleItems.style.height="";
 }
-    
+    */
     team[0].style.backgroundImage="url('Backgrounds/mist.png')";
     mountOne.style.color = "#414f6b";
     mountOne.style.textDecoration = "underline";
